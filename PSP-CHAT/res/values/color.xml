@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background_login">#136F86</color>
+    <color name="while_color">#FFFFFF</color>
+    <color name="actionbar_color">#136F86</color>
+    <color name="input_color">#136F86</color>
+    <color name="lblFromName">#777777</color>
+    <color name="bg_msg_you">#5eb964</color>
+    <color name="bg_msg_from">#e5e7eb</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="black">#000000</color>
+
+</resources>

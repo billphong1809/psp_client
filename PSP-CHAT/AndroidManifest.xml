@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="phong.android.com"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".utilities.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_chat"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ActivityFirstLogin"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".ActivityRegistration" >
+        </activity>
+        <activity android:name=".FragmentListFriend" >
+        </activity>
+        <activity android:name=".ActivityWellcomeSplashScreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityChatAllTabs" >
+        </activity>
+        <activity android:name=".ActivityChatMain" >
+        </activity>
+
+        <receiver android:name=".MyReceiver" >
+            <intent-filter>
+                <action android:name="com.example.messageseta.SENDMSG" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ActivityAddFavorite"
+            android:label="@string/title_activity_activity_add_favorite" >
+        </activity>
+        <activity
+            android:name=".ActivityAddFriendFavorite"
+            android:label="@string/title_activity_activity_add_friend_favorite" >
+        </activity>
+    </application>
+
+</manifest>
